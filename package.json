@@ -1,0 +1,64 @@
+{
+  "name": "biometric-gate",
+  "version": "0.1.0",
+  "description": "Face ID / fingerprint gate for screens or app resume",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "node internal/module_scripts/build.js",
+    "clean": "node internal/module_scripts/clean.js",
+    "lint": "eslint src/",
+    "test": "node internal/module_scripts/test.js",
+    "prepare": "node internal/module_scripts/prepare.js",
+    "open:ios": "node internal/module_scripts/open-ios.js",
+    "open:android": "node internal/module_scripts/open-android.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "biometric",
+    "face-id",
+    "fingerprint",
+    "app-lock",
+    "biometric-gate"
+  ],
+  "repository": "https://github.com/aminakhtar5595/biometric-gate",
+  "bugs": {
+    "url": "https://github.com/aminakhtar5595/biometric-gate/issues"
+  },
+  "author": "Muhammad <aminakhtar5595@gmail.com> (https://github.com/aminakhtar5595)",
+  "license": "MIT",
+  "homepage": "https://github.com/aminakhtar5595/biometric-gate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native/jest-preset": "0.88.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "~19.3.0",
+    "babel-preset-expo": "~58.0.15",
+    "eslint": "~9.39.4",
+    "eslint-config-universe": "^16.1.2",
+    "expo": "^58.0.11",
+    "expo-local-authentication": "~17.0.0",
+    "jest": "^30.0.0",
+    "jest-expo": "~58.0.11",
+    "prettier": "^3.0.0",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "typescript": "~5.9.0"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": ">=1.23.0",
+    "expo": "*",
+    "expo-local-authentication": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
